@@ -1,0 +1,148 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+a{
+	text-decoration:none;
+}
+header{
+	width:100%;
+	height:800px;
+}
+.reason{
+	height:100%;
+	width:100%;
+	color:#eeefd4;
+	text-align:center;
+	background-image:url('../bishan.img/why-beshan/whyus-banner-bg.jpg'); 
+	background-repeat:no-repeat;
+	background-size:100%; 
+}
+.reason>h1{
+	font-size:40px;
+	padding-top:200px;
+}
+.team{
+	width:80%;
+	margin-left:10%;
+	background-color:#eeefd7;
+}
+.reason>p{
+	font-size:20px; 
+}
+.team-tle,.path-title{
+	color:#414141;
+	text-align:center;
+	font-size:30px;
+}
+.person{
+	text-align:center;
+	width:100%;
+}
+
+.intros li img{
+	width:100%;
+	height:200px;
+}
+.intros li{
+	width:30%;
+	height:500px;
+	margin-left:5px;
+	border:1px solid black;
+}
+.intros li a{
+	text-decoration:none; 
+	display:block;
+	width:100%;
+	background-color:#c3c4b0;
+	margin-bottom:0px;
+}
+.feedback{
+	height:800px;
+	width:100%;
+	text-align:center;
+	background-image:url('../bishan.img/why-beshan/whyus-our_travellers_say-bg.jpg'); 
+	background-repeat:no-repeat;
+	background-size:100%; 
+}
+.feedbacks{
+	border:1px solid #eeefd7;
+	background-color:#eeefd7;
+	width:80%;
+	margin-left:10%;
+}
+.feeds li{
+	width:33%;
+}
+.feed-title{
+	text-align:center;
+}
+.feed-body{
+	font-size:15px;
+}
+.feed-foot{
+	border:1px solid #838375;
+	background-color:#838375;
+}
+footer{
+	margin-top:50px;
+	height:800px;
+	background-color:#e9ead9;
+}
+.path{
+	width:80%;
+	margin-left:10%;
+}
+.list-unstyled{
+	overflow:hidden;
+}
+.libai li{
+	width:50%;
+}
+.al>li{
+	float:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
