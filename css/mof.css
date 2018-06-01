@@ -1,0 +1,137 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	/*color: #333;*/
+}
+html{
+	font-size: 14px;
+}
+input{
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+}
+a{
+	text-decoration: none;
+}
+
+/*侧边栏菜单*/
+.mui-table-view-cell{
+	background-color: #003047;
+	color: #b2c0c7;
+}
+.li1{
+	background-color: #164d71;
+	color: white;
+	font-size: 0.8rem;
+}
+.mui-table-view-cell:after{
+	background-color: black;
+}
+.mui-table-view:after{
+	background-color: #1d6ca0;
+}
+.mui-navigate-right:after, .mui-push-right:after{
+	content: '';
+}
+.mui-icon-bars:before{
+	color: white;
+}
+.mui-bar{
+	background-color: #003047;
+}
+
+/*头部*/
+header{
+	min-width: 320px;
+	max-height: 640px;
+	display: flex;
+}
+header .mobile-logo{
+	height: 44px;
+	flex-basis: 80%;
+}
+header .mobile-logo img{
+	height: 100%;
+}
+header ul{
+	height: 44px;
+	flex-basis: 20%;
+	display: inline-flex;
+}
+header li{
+	list-style-type: none;
+	height: 44px;
+	padding: 0 10px;
+	line-height: 44px;
+}
+header li span{
+	color: white;
+	font-size: 0.8rem;
+}
+header li .mui-icon{
+	border-right: 1px solid #1d6ca0;
+}
+
+/*尾部*/
+footer{
+	background-color: #003047;
+}
+footer .columns{
+	padding: 1rem;
+	margin-top: 10px;
+}
+footer h3{
+	color: #eef0dc;
+	font-size: 25px;
+}
+footer .column{
+	padding: 0rem 1rem;
+}
+footer .right{
+	color: white;
+	font-size: 1rem;
+}
+footer .column input[type='email']{
+	background: #537788;
+	height: 35px;
+}
+footer .column input[type='button']{
+	background: #eff0d9;
+	color: #4a4a4a;
+	height: 35px;
+	width: 100%;
+	border-radius: 3px;
+}
+footer .column select{
+	height: 2rem;
+	padding: 0 0.5rem;
+	margin: 30px auto;
+}
+footer .column .footer-item{
+	color: #eef0dc;
+	font-size: 1.125rem;
+}
+footer .column .footer-link a{
+	color: #7f939c;
+	font-size: 14px;
+}
+footer .column .footer-wechat{
+	display: flex;
+	justify-content: center;
+}
+footer .column .fwechat{
+	margin: 20px auto;
+	width: 45%;
+}
+footer .column .fwechat p{
+	font-size: 11px;
+	color: #eef0dc;
+	opacity: 0.5;
+	text-align: center;
+}
+footer .column .fwechat img{
+	width: 100%;
+}
