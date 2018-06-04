@@ -8,67 +8,448 @@
     <meta name="google-site-verification" content="QiEVD-bBIhqdZHzDx-Hq2wo204N3clUWaf2hT8clj50">
     <meta name="baidu-site-verification" content="DyoLm1XRgV">
     <meta name="description" content="碧山旅行提供兼具品质与品位的定制深度旅游体验的旅行机构。">
-    <link rel="alternative" hreflang="zh" href="http://www.beshan.com/">
-    <script src="jQuery_v3.3.1.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="layui/layui.js"></script>
+    <script src="jquery-3.3.1.js"></script>
     <script src="jquery-ui/jquery-ui.min.css"></script>
-    <script src="jquery-validate/jquery.validate.min.js"></script>
-    <script src="js/mui.min.js"></script>
-    <link href="css/mui.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <script src="js/beshan-nav.js"></script>
+    <script src="js/mui.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <script type="text/javascript" src="layui/layui.all.js"></script>
     <link rel="stylesheet" href="layui/css/layui.css">
+    <link href="css/mui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="css/beshan-nav.css">
     <link rel="stylesheet" href="css/basic-style.css">
-    <link rel="icon" type="image/png" href="img/icons/title-logo.png" sizes="32x32">
-    <script type="text/javascript" charset="utf-8">
-    mui.init();
-    </script>
+    <link rel="icon" type="image/png" href="img/icon/titleLOGO.png" sizes="32x32">
+    <link rel="alternative" hreflang="zh" href="http://www.beshan.com/">
+    <link rel="stylesheet" type="text/css" href="JD650.css" media="screen and (max-width : 650px)">
+    <link rel="stylesheet" type="text/css" href="JD320.css" media="screen and (max-width : 360px)">
+
     <title>定制深度旅行体验- 碧山旅行</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
 </head>
 
-<body>
-    <!-- 大导航 -->
+<body ondragstart="return false">
+<!-- 变暗背景板 -->
+    <div class="allCover hide"></div>
+<!-- OVER -->
+<!-- 一键定制 -->
+    <div class="beshan-commission hide">
+        <h2>开始预订</h2>
+        <p>恭喜您向梦想旅行又迈进了一步！请填写以下表格，我们的旅行定制师将助您实现梦想。</p>
+        <a class="close-btn"></a>
+        <form action="http://www.beshan.com/api/trip/get-started" class="commission-form">
+
+            <!-- 姓 -->
+            <div class="mui-row">
+              <div class="mui-col-sm-4">
+                <label class="f_right" for="first_name" role="alert">姓:</label>
+              </div>
+              <div class="mui-col-sm-6">
+               <input id="first_name" name="first_name" type="text" placeholder="" required="">
+               <small class="error">姓是必填项.</small>
+              </div>
+            </div>
+            <!-- 名 -->
+            <div class="mui-row">
+              <div class="mui-col-sm-4">
+                <label class="f_right" for="phone">电话:</label>
+              </div>
+              <div class="mui-col-sm-6">
+               <input id="phone" name="phone" type="text" placeholder="" required="">
+               <small class="error">电话是必填项.</small>
+              </div>
+            </div>
+            <!-- 邮箱 -->
+            <div class="mui-row">
+              <div class="mui-col-sm-4">
+                <label class="f_right" for="email">邮箱:</label>
+              </div>
+              <div class="mui-col-sm-6">
+               <input id="email" name="email" type="text" placeholder="" required="" pattern="email">
+               <small class="error">邮箱是必填项.</small>
+              </div>
+            </div>
+            <!-- 微信号 -->
+            <div class="mui-row">
+              <div class="mui-col-sm-4">
+                <label class="f_right" for="wechat">微信号: <span class="choose-fill">(选填)</span></label>
+              </div>
+              <div class="mui-col-sm-6">
+               <input id="phone" name="wechat" type="text" placeholder="">
+              </div>
+            </div>
+            <!-- 地址 -->
+            <div class="mui-row expend-top">
+              <div class="mui-col-sm-4">
+                <label class="f_right">地址:<span class="choose-fill">(选填)</span></label>
+              </div>
+              <div class="mui-col-sm-6">
+                <a class="mui-btn commission-btn address-Down">打开更多 <span class="f_bold">+</span></a>
+              </div>
+            </div>
+            <!-- 地址栏 -->
+            <div class="beshan-address hide">
+                <div class="mui-row">
+                    <div class="mui-col-sm-4">
+                        <label class="f_right" for="address-1" role="alert">
+                            地址1:
+                        </label>
+                    </div>
+                    <div class="mui-col-sm-6">
+                        <input id="address-1" name="address-1" type="text" placeholder="" required="">
+                    </div>
+                </div>
+                <div class="mui-row">
+                    <div class="mui-col-sm-4">
+                        <label class="f_right" for="address-2" role="alert">
+                            地址2:
+                        </label>
+                    </div>
+                    <div class="mui-col-sm-6">
+                        <input id="address-2" name="address-2" type="text" placeholder="" required="">
+                    </div>
+                </div>
+                <div class="mui-row">
+                    <div class="mui-col-sm-4">
+                        <label class="f_right" for="city" role="alert">
+                            城市:
+                        </label>
+                    </div>
+                    <div class="mui-col-sm-6">
+                        <input id="city" name="city" type="text" placeholder="" required="">
+                    </div>
+                </div>
+                 <div class="mui-row">
+                    <div class="mui-col-sm-4">
+                        <label class="f_right" for="city" role="alert">
+                            省份/城市:
+                        </label>
+                    </div>
+                    <div class="mui-col-sm-6 mui-row">
+                        <div class="mui-col-sm-4">
+                            <input id="city" name="city" type="text" placeholder="" required="">
+                        </div>
+                        <div class="mui-col-sm-4">
+                            <label class="f_right" for="zip-code" role="alert">
+                            邮编:
+                        </label>
+                        </div>
+                        <div class="mui-col-sm-4">
+                            <input id="zip-code" name="zip-code" type="text" placeholder="" required="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 国家 -->
+            <div class="mui-row">
+                <div class="mui-col-sm-4">
+                    <label class="f_right" for="country" role="alert">国家:</label>
+                </div>
+                <div class="mui-col-sm-6">
+                    <select id="country-select" id="country" name="country" class="hide" required="">
+                          <!-- please use this country list http://www.textfixer.com/resources/dropdowns/country-dropdown-country-html.txt -->
+                          <option>请选择国家</option>
+                    </select>
+                    <div class="chosen-container country-container" style="width: 100%;" title="" id="country_get_started_chosen">
+                        <a class="chosen-single" tabindex="-1">
+                            <span>选择一个国家</span>
+                            <div><b></b></div>
+                        </a>
+                        <div class="chosen-drop">
+                            <div class="chosen-search">
+                                <input type="text" autocomplete="off">
+                            </div>
+                            <ul class="chosen-results country-results">
+                                <li class="active-result result-selected">选择一个国家</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="error">国家是必填项</span>
+                </div>
+            </div>
+            <!-- 人数、时长 -->
+            <div class="mui-row">
+                    <div class="mui-col-sm-4">
+                        <label class="f_right" for="people-num" role="alert">
+                            旅行人数:
+                        </label>
+                    </div>
+                    <div class="mui-col-sm-6 mui-row">
+                        <div class="mui-col-sm-4">
+                            <input id="people-num" name="people-num" type="text" placeholder="" required="">
+                        </div>
+                        <div class="mui-col-sm-4">
+                            <label class="f_right" for="travel-range" role="alert">
+                            旅行时长:
+                            </label>
+                        </div>
+                        <div class="mui-col-sm-4">
+                            <div class="mui-col-sm-12">
+                            <select id="travel-range" name="travel-range" class="hide" required="">
+                                <option value="travel-range0">1-3 天</option>
+                                <option value="travel-range1">4-8 天</option>
+                                <option value="travel-range2">9-14 天</option>
+                                <option value="travel-range3">15-21 天</option>
+                                <option value="travel-range4">21+ 天</option>
+                            </select>
+                            <div class="chosen-container" style="width: 100%;" title="" id="country_get_started_chosen">
+                                <a class="chosen-single" tabindex="-1">
+                                    <span>1-3 天</span>
+                                    <div><b></b></div>
+                                </a>
+                                <div class="chosen-drop">
+                                    <ul class="chosen-results">
+                                        <li class="active-result result-selected">1-3 天</li>
+                                        <li class="active-result">4-8 天</li>
+                                        <li class="active-result">9-14 天</li>
+                                        <li class="active-result">16-21 天</li>
+                                        <li class="active-result">21+ 天</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- 预计出发时间 -->
+            <div class="mui-row">
+                <div class="mui-col-sm-4">
+                    <label class="f_right" for="departure-time">预计出发时间:<span class="choose-fill">(选填)</span></label>
+                </div>
+                <div class="mui-col-sm-6 mui-row">
+                    <div class="mui-col-sm-12 departure-time">
+                        <span>年</span>
+                        <select id="departure-year departure-select" class="mui-col-sm-2">
+                            <option>----</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                        </select>
+                        <span>月</span>
+                        <select id="departure-month departure-select" class="mui-col-sm-1">
+                            <option>--</option>
+                        </select>
+                        <span>日</span>
+                        <select id="departure-day departure-select" class="mui-col-sm-1">
+                            <option>--</option>
+                        </select>
+                    </div>
+                    <div class="mui-col-sm-4">
+                    </div>
+                </div>
+            </div>
+            <!-- 我的爱好 -->
+            <div class="mui-row expend-top">
+              <div class="mui-col-sm-4">
+                <label class="f_right">我的旅行爱好:<span class="choose-fill">(选填)</span></label>
+              </div>
+              <div class="mui-col-sm-6">
+                <a class="mui-btn commission-btn hobbies-Down">打开更多 <span class="f_bold">+</span></a>
+              </div>
+            </div>
+            <!-- 爱好列表 -->
+            <div class="hobbies-list">
+                <div class="mui-row">
+                    <div class="mui-col-sm-4">
+                    </div>
+                    <div class="mui-col-sm-6 mui-row">
+                        <span class="mui-col-sm-2">
+                            <input type="checkbox" id="远足" name="hobbies" value="远足">
+                        </span>
+                        <label for="远足" class="mui-col-sm-2">
+                            远足
+                        </label>
+                    </div>
+                </div>
+                <div class="mui-row">
+                    <div class="mui-col-sm-4">
+                    </div>
+                    <div class="mui-col-sm-6 mui-row">
+                        <span class="mui-col-sm-2">
+                            <input type="checkbox" name="hobbies" value="亲子" id="亲子">
+                        </span>
+                        <label for="亲子" class="mui-col-sm-2">
+                            亲子
+                        </label>
+                    </div>
+                </div>
+                <div class="mui-row">
+                    <div class="mui-col-sm-4">
+                    </div>
+                    <div class="mui-col-sm-6 mui-row">
+                        <span class="mui-col-sm-2">
+                            <input type="checkbox" name="hobbies" value="徒步" id="徒步">
+                        </span>
+                        <label for="徒步" class="mui-col-sm-2">
+                                徒步
+                        </label>
+                    </div>
+                </div>
+                <div class="mui-row">
+                    <div class="mui-col-sm-4">
+                    </div>
+                    <div class="mui-col-sm-6 mui-row">
+                        <span class="mui-col-sm-2">
+                            <input type="checkbox" name="hobbies" value="自然" id="自然">
+                        </span>
+                        <label for="自然" class="mui-col-sm-2">
+                                自然
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- 您希望我们如何与您联系 -->
+            <div class="mui-row  expend-top">
+              <div class="mui-col-sm-4">
+                <label class="f_right">您希望我们如何与您联系:<span class="choose-fill">(选填)</span></label>
+              </div>
+              <div class="mui-col-sm-6">
+                <input type="radio" id="how-mail" class="how-mail" value="how-mail" name="how-connect" checked="">
+                <label for="how-mail">邮箱</label>
+                <input type="radio" id="how-tel" class="how-tel" value="how-tel" name="how-connect">
+                <label for="how-tel">电话</label>
+              </div>
+            </div>
+            <!-- 您如何得知碧山 -->
+            <div class="mui-row expend-top">
+              <div class="mui-col-sm-4">
+                <label class="f_right" for="how-know-beshan">您如何得知碧山:</label>
+              </div>
+              <div class="mui-col-sm-6">
+                <div class="mui-col-sm-12">
+                            <select id="travel-range" name="travel-range" class="hide" required="">
+                                <option value="曾跟碧山旅游过">曾跟碧山旅游过</option>
+                                <option value="微信">微信</option>
+                                <option value="朋友圈">朋友圈</option>
+                                <option value="线下活动">线下活动</option>
+                                <option value="其他">其他</option>
+                            </select>
+                            <div class="chosen-container" style="width: 100%;" title="" id="country_get_started_chosen">
+                                <a class="chosen-single" tabindex="-1">
+                                    <span>---</span>
+                                    <div><b></b></div>
+                                </a>
+                                <div class="chosen-drop">
+                                    <ul class="chosen-results">
+                                        <li class="active-result result-selected">---</li>
+                                        <li class="active-result">曾跟碧山旅游过</li>
+                                        <li class="active-result">微信</li>
+                                        <li class="active-result">朋友圈</li>
+                                        <li class="active-result">线下活动</li>
+                                        <li class="active-result">其他</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+              </div>
+            </div>
+            <!-- 电子报 -->
+            <div class="mui-row">
+              <div class="mui-col-sm-4">
+              </div>
+              <div class="mui-col-sm-8">
+                <input type="checkbox" id="want-ePaper" name="want-ePaper" checked="">
+                <label for="want-ePaper">我想要收到碧山的电子报</label>
+              </div>
+            </div>
+            <!-- 评论 -->
+            <div class="mui-row expend-top">
+              <div class="mui-col-sm-4 expend-top">
+                <label class="f_right" for="comment">评论:<span class="choose-fill">(选填)</span></label>
+              </div>
+              <div class="mui-col-sm-6 expend-top">
+                <textarea id="comment" placeholder="请写下您的评论..."></textarea>
+              </div>
+            </div>
+            <!-- 提交 -->
+            <div class="mui-row expend-top submit-box">
+              <div class="mui-col-sm-6 expend-top">
+                <input type="submit" class="mui-btn btn-orange f_right" name="提交" value="提交" id="commission-submit">
+              </div>
+              <div class="mui-col-sm-6 expend-top">
+                <input type="button" class="mui-btn btn-navy f_left" name="重置" value="取消" id="commission-reset">
+              </div>
+            </div>
+        </form>
+    </div>
+<!-- OVER -->
+<!-- 大导航 -->
     <section class="beshan-nav">
         <div class="topbar-container">
             <nav class="top-bar">
-                <ul class="f_right">
-                    <li class="line-right">
+                <ul class="title-area">
+                    <li class="name">
+                        <div class="logo"><a href="http://www.beshan.com">WildChina
+                            </a></div>
+                    </li>
+                </ul>
+                <ul class="f_right nomargin">
+                    <li class="contact-line line-right nav-item">
                         <a class="nav-contact-us">
                             联系我们
                         </a>
-                        <ul class="contact-popout">
-                            <li class="contact-email">
-                                <i class="icon-mail">
-                                    <img src="img/icons/mail.png">
-                                </i>
-                                <a class="contact-mail" href="beshan@wildchina.com">mailto:beshan@wildchina.com</a>
+                        <ul class="contact-popout container dontGetOut">
+                            <li class="dontGetOut contact-email">
+                                <div class="dontGetOut icon-mail contact-before"></div>
+                                <a class="dontGetOut contact-mail contact-after hoverToOrange" href="mailto:beshan@wildchina.com">beshan@wildchina.com</a>
                             </li>
-                            <li class="contact-phone">
-                                <i class="icon-phone"></i>
-                                <a class="contact-phone" href="tel:+86 400 065 6602" data-country="China">
-                                    <span class="location">+86</span><span class="contact-number">400 065 6602</span>
+                            <li class="dontGetOut contact-phone">
+                                <div class="dontGetOut icon-phone contact-before"></div>
+                                <a class="dontGetOut contact-phone contact-after hoverToOrange" href="tel:+86 400 065 6602">
+                                    <span class="dontGetOut location">+86</span><span class="dontGetOut contact-number">400 065 6602</span>
                                 </a>
                             </li>
-                            <li class="contact-net">
-                                <i class="icon-net"></i>
-                                <a class="contact-icon">
-
-                                </a>
-                                <a class="contact-icon">
-
-                                </a>
+                            <li class="dontGetOut contact-net">
+                                <div class="dontGetOut icon-net contact-before"></div>
+                                <div class="dontGetOut contact-icons-box contact-after">
+                                    <a href="https://mp.weixin.qq.com/s?__biz=MjM5NjMwNjM0MA==&mid=545665117&idx=1&sn=cacd367e7f70a83636fdd37a6a3d0192&scene=1&srcid=04265XOKdwocq3SsieceDfws&key=b28b03434249256b8371f0ebed852be4b232f69100090d77395980229423bb38dee196b7caee803180c601a25b476bd1&ascene=0&uin=MjE0OTA1ODk4NA%3D%3D&devicetype=iMac+MacBookAir6%2C2+OSX+OSX+10.9.5+build%2813F1112%29&version=11020201&pass_ticket=OWrxZqJyTG6ds%2FbeFoDbAXdDIeebFonMqyYrN2J2tpPrXoLdEoX%2F9HIPURtUVJ9Z" target="_blank" class="hoverToOrange">
+                                        <span class="dontGetOut layui-icon layui-icon-login-wechat"></span>
+                                    </a>
+                                    <a href="http://weibo.com/beshantravel" target="_blank">
+                                        <span class="dontGetOut layui-icon layui-icon-login-weibo"></span>
+                                    </a>
+                                </div>
                             </li>
                         </ul>
                     </li>
-                    <li class="line-right">
+                    <li class="dontGetOut search-line line-right nav-item">
                         <a class="nav-search">
                             网站搜索
                         </a>
+                        <ul class="searchpop dontGetOut">
+                            <li class="dontGetOut">
+                                <form action="http://www.beshan.com/search" data-abide="" id="search" method="get" novalidate="novalidate" class="dontGetOut">
+                                    <div class="dontGetOut">
+                                        <div class="dontGetOut search-content-box">
+                                            <input type="hidden" name="cat" value="corporate+website" required="" class="dontGetOut">
+                                            <input type="search" placeholder="站内搜索" class=" dontGetOut search-content" name="k" required="" >
+
+                                        </div>
+                                        <div class="dontGetOut search-btn-box">
+                                            <input type="submit" class="search-btn button" value="搜索" class="dontGetOut">
+                                        </div>
+                                        <small class="error dontGetOut">
+                                        请输入搜索词</small>
+                                    </div>
+                                </form>
+                                <div>
+                                    <div class="dontGetOut radio-box clear">
+                                        <input type="radio" name="searchType" value="http://www.beshan.com/search " id="search-site" checked="" class="dontGetOut">
+                                        <label for="search-site" class="dontGetOut">网站搜索</label>
+                                        <input type="radio" name="searchType" value="/blog/" id="search-blog" class="dontGetOut">
+                                        <label for="search-blog" class="dontGetOut">博客搜索</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="change-language">
+                    <li class="change-language nav-item hoverToWhite">
                         <a href="https://www.wildchina.com/" class="nav-language line-right">
                             EN
                         </a>
@@ -81,9 +462,354 @@
         </div>
         <div class="bottombar-container">
             <nav class="bottom-bar">
+                <ul class="secondry-nav f_right clear hoverToOrange">
+                    <li>
+                        <a href="http://www.beshan.com/remen-lvxing-mudidi" class="alter-subnav">
+                        目的地
+                        </a>
+                        <ul class="subnav color_white">
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/remen-lvxing-mudidi#city/11">
+                                碧山，美国专家
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/dingzhi-shendu-lvxing/riben-beihaidao-wuri-huaxue-lvxing">
+                                日本
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/dingzhi-shendu-lvxing/riben-beihaidao-wuri-huaxue-lvxing">
+                                冰岛
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/zh/dingzhi-shendu-lvxing/bilu-shiyitian-yinjia-wenming-lvxing">
+                                秘鲁
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/dingzhi-shendu-lvxing/bilishi-shendu-wuri-lvxing">
+                                比利时
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/remen-lvxing-mudidi">
+                                其它热门地区
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://www.beshan.com/youxuetuan" class="alter-subnav">
+                        碧山旅程
+                        </a>
+                        <ul class="subnav color_white">
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/siren-dingzhi-lvxing">
+                                私人定制旅行
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/jingzhi-jiudian">
+                                碧山收藏-精致酒店
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/siren-xiaotuan-lvxing">
+                                私密小团旅行
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshangifts.com/">
+                                碧山礼品
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/youxuetuan">
+                                课外教学体验
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.wctevents.com">
+                                商务旅行
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://www.beshan.com/jingxuan/meiguo-lvxing-heji" class="alter-subnav">
+                        精选主题
+                        </a>
+                        <ul class="subnav color_white">
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/jiating-chuyou">
+                                家庭出游
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/jingxuan/virtuoso-jiudian-heji">
+                                VIRTUOSO酒店
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/jingxuan/meiguo-lvxing-heji">
+                                “这是美国”系列合辑
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://www.beshan.com/bishan-jiangtang" class="alter-subnav">
+                        碧山讲堂
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.beshan.com/guanyu-bishan" class="alter-subnav">
+                        关于碧山
+                        </a>
+                        <ul class="subnav color_white">
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/guanyu-bishan">
+                                关于碧山
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/xuanze-bishan#section-why-us-meet-our-team">
+                                碧山团队
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/xuanze-bishan#section-why-us-testimonials">
+                                客户反馈
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/xuanze-bishan#section-why-us-awards">
+                                国际认可
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/xuanze-bishan#section-why-us-timeline">
+                                碧山走过的路
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/lianxi-bishan">
+                                联系我们
+                                </a>
+                            </li>
+                            <li class="hoverToOrange">
+                                <a href="http://www.beshan.com/jiaru-bishan">
+                                加入碧山
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://www.beshan.com/bishan-dongtai/" class="alter-subnav">
+                        碧山视角
+                        </a>
+                    </li>
+                    <li class="secondry-button"><button class="button btn-orange">
+                        一键定制
+                    </button></li>
+                    <li class="secondry-social">
+                        <img src="img/wechat.svg">
+                    </li>
+                    <li class="secondry-social">
+                        <img src="img/youku.svg">
+                    </li>
+                    <li class="secondry-social">
+                        <img src="img/ximalaya.jpg">
+                    </li>
+                </ul>
             </nav>
         </div>
+        <div class="beshan-bar-container hide">
+            <ul class="beshan-bar">
+                <li class="hoverToOrange">
+                    <a href="http://www.beshan.com/">
+                        主页
+                    </a>
+                </li>
+                <span>&gt;</span>
+                <span class="active">旅行目的地</span>
+            </ul>
+        </div>
     </section>
+<!-- 大轮播图 -->
+    <div id="slider" class="mui-slider" >
+        <div class="mui-slider-group mui-slider-loop">
+            <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a class="slider-item slider-item4"></a>
+              <div class="mui-col-sm-12">
+                <div class="rec-heading">最新上线</div>
+                <div class="rec-trip"><a href="http://www.beshan.com/dingzhi-shendu-lvxing/tansangniya-batian-chunjie-xiaotuan-lvxing">【暑期】追踪动物大迁徙坦桑尼亚经典路线</a></div>
+                <div class="rec-trip">
+                  <p>数以千万计的野生动物们奔徙在这里，在这片非洲大陆东部边缘而又毗邻印度洋的土地上。它们用自己蹄音敲打着大地的心脏，就好像非洲鼓一般，激荡出生命最激昂的心跳。</p>
+                </div>
+              </div>
+            </div>
+            <!-- 第一张 -->
+            <div class="mui-slider-item">
+                <a class="slider-item slider-item1">
+                </a>
+                <div class="mui-col-sm-12">
+                    <div class="rec-heading">亲子线路</div>
+                    <div class="rec-trip">
+                        <a href="http://www.beshan.com/dingzhi-shendu-lvxing/yishu-qixing-faguo-ouzhou-lvxing">【暑期】发现艺术之美，体验骑行之趣 - 法国游学之旅
+                        </a>
+                        <p>
+                            艺术，从来都不可纸上谈兵。
+                            <br>
+                            跟随碧山艺术专家，在卢浮宫中身临其境地欣赏着《蒙娜丽莎的微笑》，或许你与天才艺术家达芬奇神交已久。
+                            <br>
+                            在法兰西最美的夏天来到莫奈的故居，拨开繁茂的枝叶，
+                            <br>
+                            穿过芬芳的鲜花，走过精致的小桥，靠近这处岁月静幽的老屋，也就靠近了艺术。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 第二张 -->
+            <div class="mui-slider-item">
+              <a class="slider-item slider-item2">
+              </a>
+              <div class="mui-col-sm-12">
+                <div class="rec-heading">碧山推荐</div>
+                <div class="rec-trip"><a href="http://www.beshan.com/dingzhi-shendu-lvxing/budan-tubu-qingdu-lvxing">【碧山经典】真实不丹七日</a></div>
+                <div class="rec-trip">
+                  <p>这是碧山不丹“明星线路"——三天徒步加四天观光行程。了解不丹最好的方式莫过于徒步，山林中行走，美景中驻足，一切尽收眼底，又触手可及。这条为碧山客人定制的徒步行程里，还会住一晚安缦，把身体的辛苦和休憩都推到另一个高度。</p>
+                </div>
+              </div>
+
+            </div>
+            <!-- 第三张 -->
+            <div class="mui-slider-item">
+              <a class="slider-item slider-item3"></a>
+              <div class="mui-col-sm-12 columns">
+                <div class="rec-heading">最新上线</div>
+                <div class="rec-trip"><a href="http://www.beshan.com/dingzhi-shendu-lvxing/bilu-shiyitian-yinjia-wenming-lvxing">【十一小团】秘鲁，寻找失落的印加文明</a></div>
+                <div class="rec-trip">
+                <p>
+                    顺着印加古道，一路深入安第斯山腹地，登上印加古城马丘比丘，
+                    <br>
+                    在山巅云间欣赏这被誉为“世界新七大奇迹”之一的宏伟古迹。
+                </p>
+                </div>
+              </div>
+            </div>
+            <!-- 第四张 -->
+            <div class="mui-slider-item">
+              <a class="slider-item slider-item4">
+              </a>
+              <div class="mui-col-sm-12">
+                <span class="rec-heading">最新上线</span>
+                <div class="rec-trip"><a href="http://www.beshan.com/dingzhi-shendu-lvxing/tansangniya-batian-chunjie-xiaotuan-lvxing">【暑期】追踪动物大迁徙坦桑尼亚经典路线</a></div>
+                <div class="rec-trip">
+                  <p>数以千万计的野生动物们奔徙在这里，在这片非洲大陆东部边缘而又毗邻印度洋的土地上。它们用自己蹄音敲打着大地的心脏，就好像非洲鼓一般，激荡出生命最激昂的心跳。</p>
+                </div>
+              </div>
+            </div>
+            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a class="slider-item slider-item1">
+              </a>
+            </div>
+          </div>
+
+          <div class="mui-slider-indicator hide">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+          </div>
+          <div class="slider-leftArrow">
+            <a><span class="layui-icon layui-icon-left slider-prev"></span></a>
+          </div>
+          <div class="slider-rightArrow">
+            <a><span class="layui-icon layui-icon-right slider-next"></span></a>
+          </div>
+        <div class="search-above-slider mui-row">
+            <div class="mui-col-sm-3">
+                <select id="travel-range" name="travel-meghod" class="hide" required="">
+                    <option value="所有旅行方式">所有旅行方式</option>
+                    <option value="私密小团旅行">私密小团旅行</option>
+                    <option value="私人订制旅行">私人订制旅行</option>
+                    <option value="碧山收藏-精致酒店">碧山收藏-精致酒店</option>
+                </select>
+                <div class="chosen-container" style="width: 100%;" title="" id="country_get_started_chosen">
+                    <a class="chosen-single" tabindex="-1">
+                        <span>所有旅行方式</span>
+                        <div><b></b></div>
+                    </a>
+                    <div class="chosen-drop">
+                        <ul class="chosen-results">
+                            <li class="active-result result-selected">所有旅行方式</li>
+                            <li class="active-result">私密小团旅行</li>
+                            <li class="active-result">私人订制旅行</li>
+                            <li class="active-result">碧山收藏-精致酒店</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mui-col-sm-3">
+                <select id="travel-range" name="travel-range" class="hide" required="">
+                    <option value="曾跟碧山旅游过">曾跟碧山旅游过</option>
+                    <option value="微信">微信</option>
+                    <option value="朋友圈">朋友圈</option>
+                    <option value="线下活动">线下活动</option>
+                    <option value="其他">其他</option>
+                </select>
+                <div class="chosen-container" style="width: 100%;" title="" id="country_get_started_chosen">
+                    <a class="chosen-single" tabindex="-1">
+                        <span>---</span>
+                        <div><b></b></div>
+                    </a>
+                    <div class="chosen-drop">
+                        <ul class="chosen-results">
+                            <li class="active-result result-selected">---</li>
+                            <li class="active-result">曾跟碧山旅游过</li>
+                            <li class="active-result">微信</li>
+                            <li class="active-result">朋友圈</li>
+                            <li class="active-result">线下活动</li>
+                            <li class="active-result">其他</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="mui-col-sm-3">
+                <select id="travel-range" name="travel-range" class="hide" required="">
+                    <option value="曾跟碧山旅游过">曾跟碧山旅游过</option>
+                    <option value="微信">微信</option>
+                    <option value="朋友圈">朋友圈</option>
+                    <option value="线下活动">线下活动</option>
+                    <option value="其他">其他</option>
+                </select>
+                <div class="chosen-container" style="width: 100%;" title="" id="country_get_started_chosen">
+                    <a class="chosen-single" tabindex="-1">
+                        <span>---</span>
+                        <div><b></b></div>
+                    </a>
+                    <div class="chosen-drop">
+                        <ul class="chosen-results">
+                            <li class="active-result result-selected">---</li>
+                            <li class="active-result">曾跟碧山旅游过</li>
+                            <li class="active-result">微信</li>
+                            <li class="active-result">朋友圈</li>
+                            <li class="active-result">线下活动</li>
+                            <li class="active-result">其他</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- OVER -->
+<!--  -->
 </body>
 
 </html>

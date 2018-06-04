@@ -1,0 +1,144 @@
+#slider{
+    position: relative;
+}
+#slider a{
+    color: #4a4a4a;
+}
+.mui-slider-item a{
+    display: inline-block;
+    width: 100%;
+    height: 850px;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: cover;
+}
+.slider-item1{
+    background-image: url(../img/banner-img/paris-3257030_1920.jpg);
+}
+.slider-item2{
+    background-image: url(../img/banner-img/Taktsang-Bhutan-tour.jpg);
+}
+.slider-item3{
+    background-image: url(../img/banner-img/bilu.jpg);
+}
+.slider-item4{
+    background-image: url(../img/banner-img/crater.jpg);
+}
+.mui-indicator{
+    width: 11px !important;
+    height: 11px !important;
+}
+.slider-leftArrow{
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: left;
+    line-height:850px;
+}
+.slider-rightArrow{
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    text-align: right;
+    line-height:850px;
+}
+.slider-leftArrow span{
+    color: #fff;
+    font-size: 5rem;
+    width: 80px;
+    height: 100px;
+    background: rgba(123,123,123,.3);
+}
+.slider-rightArrow span{
+    color: #fff;
+    font-size: 5rem;
+    width: 80px;
+    height: 100px;
+    background: rgba(123,123,123,.3);
+}
+.mui-slider-group{
+    transition-timing-function: linear;
+    transition-property: transform;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+.mui-slider-item{
+    position: relative;
+}
+.mui-slider-item .mui-col-sm-12{
+    width: 100%;
+    max-width: 1140px;
+    height: 300px;
+    background-color: transparent;
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    margin-left:-570px  ;
+    color: #f0f1d9;
+    text-align: center;
+
+}
+.mui-slider-item .mui-col-sm-12 *{
+    color: #f0f1d9;
+}
+.rec-heading {
+    display: inline-block;
+    position: relative;
+    height: 2rem;
+    line-height: 2rem;
+    background: #899696;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+.rec-heading::before{
+    display: block;
+    content:" ";
+    border: 1rem solid #899696;
+    border-left-color: transparent;
+    position: absolute;
+    top: 0;
+    left: -2em;
+}
+.rec-heading::after{
+    display: block;
+    content:" ";
+    border: 1rem solid #899696;
+    border-right-color: transparent;
+    position: absolute;
+    top: 0;
+    right: -2em;
+}
+.rec-trip {
+    margin: 0.5rem 0;
+
+}
+.rec-trip a {
+    color: #f0f1d9 !important;
+    font-size: 2.875rem;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.35);
+    font-family: 'Microsoft Yahei', 'Volkhov', serif;
+    color: #f0f1d9;
+    height:auto;
+}
+.rec-trip p {
+    font-size: 1.375rem;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.35);
+    color: #f0f1d9;
+}
+.search-above-slider{
+    position: absolute;
+    top:520px;
+    width: 100%;
+    max-width:1000px;
+    margin-left:-500px;
+    left: 50%;
+    padding: 20px;
+    background-color: rgba(0,0,0,.6);
+    margin-bottom: 40px;
+}
