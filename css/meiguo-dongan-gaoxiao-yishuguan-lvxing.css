@@ -1,0 +1,105 @@
+body{
+    font-size: 100%;
+    min-width: 270px;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+input,select,option{
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+}
+a:hover{
+	text-decoration: none;
+}
+section{
+	width: 100%;
+	position: relative;
+}
+section img{
+	width: 100%;
+}
+section .carousel-content{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+}
+.carousel-content .row{
+	width: 100%;
+}
+.carousel-content h1{
+	color: #f0f1d9;
+    font-size: 4.25rem;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.carousel-content .description{
+	margin: 1rem 0;
+}
+.carousel-content .description p{
+    font-weight: normal;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    margin-bottom: 4rem;
+    color: #f0f1d9;
+}
+.carousel-content .actions{
+	margin: 20px 0 30px;
+	position: relative;
+}
+.carousel-content .custom-button{
+    padding: 0.7rem 2.6rem;
+    display: inline-block;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 1rem;
+    background-color: #f17e00;
+    color: white;
+    font-size: 2rem;
+}
+.carousel-content .custom-button1{
+    display: inline-block;
+	position: absolute;
+}
+.carousel-content .social-sharer{
+	padding: 0.7rem 2.6rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+.carousel-content .actions .share-icon{
+	min-width: 100%;
+	text-align: center;
+}
+.carousel-content .actions .share-icon a{
+	display: inline-block;
+	padding: 4px;
+	width: 20px;
+}
+.carousel-content .about-box{
+	background-color: rgba(225,225,225,0.95);
+	padding: 20px;
+	position: absolute;
+	top: 14px;
+}
+.carousel-content .about-box h2{
+	line-height: 1.2;
+	font-size: 2.5rem;
+	font-weight: normal;
+	margin-top: 5px;
+}
+.carousel-content .about-box ul{
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.carousel-content .about-box li{
+	font-size: 1.7rem;
+}
+.section{
+	width: 100%;
+	height: 600px;
+	background: url(../img/hemp-bg.png);
+}
