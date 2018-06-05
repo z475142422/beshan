@@ -1,0 +1,47 @@
+$(function(){
+	$('#but').click(function(){
+		$('.tip').remove();
+		if($('#m-email').val()==""){
+			var tip = $('<p class="tip">此项不能为空</p>');
+			$('#m-email').after(tip);
+		}
+	})
+	mui.ready(function(){
+		mui(document).on('tap','#phone',function(){
+			$('#myModal').modal('show');
+		})
+		mui(document).on('tap','#search',function(){
+			$('#myModal1').modal('show');
+		})
+	})
+	$('.btop>input:eq(0)').click(function(){
+		$('.btop>input:eq(0)').css({
+			'background-color':'black',
+			'color':'white'
+		})
+		$('.btop>input:eq(1)').css({
+			'background-color':'#edefd7',
+			'color':'black'
+		})
+	})
+	$('.btop>input:eq(1)').click(function(){
+		$('.btop>input:eq(1)').css({
+			'background-color':'black',
+			'color':'white'
+		})
+		$('.btop>input:eq(0)').css({
+			'background-color':'#edefd7',
+			'color':'black'
+		})
+	})
+	$('.bbottom>input:eq(0)').click(function(){
+		$('.i').remove();
+		$('.bmiddle>p:eq(0)').css('color','black');
+		if($('.bmiddle>input:eq(0)').val()==""){
+			$('.bmiddle>p:eq(0)').css('color','red')
+			$('.bmiddle>input:eq(0)').focus()
+			var stip = $('<i class="i">请输入搜索词</i>')
+			$('.bmiddle>input:eq(0)').after(stip)
+		}
+	})
+})

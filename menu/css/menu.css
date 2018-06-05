@@ -1,0 +1,246 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	/*color: #333;*/
+}
+html{
+	font-size: 14px;
+}
+input{
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+}
+a{
+	text-decoration: none;
+}
+
+/*侧边栏菜单*/
+.mui-table-view-cell{
+	background-color: #003047;
+	color: #b2c0c7;
+}
+.li1{
+	background-color: #164d71;
+	color: white;
+	font-size: 0.8rem;
+}
+.mui-table-view-cell:after{
+	background-color: black;
+}
+.mui-table-view:after{
+	background-color: #1d6ca0;
+}
+.mui-navigate-right:after, .mui-push-right:after{
+	content: '';
+}
+.mui-icon-bars:before{
+	color: white;
+}
+.mui-bar{
+	background-color: #003047;
+}
+
+/*头部*/
+header{
+	min-width: 320px;
+	max-height: 640px;
+	display: flex;
+}
+header .mobile-logo{
+	height: 44px;
+	flex-basis: 80%;
+}
+header .mobile-logo img{
+	height: 100%;
+}
+header ul{
+	height: 44px;
+	flex-basis: 20%;
+	display: inline-flex;
+}
+header li{
+	list-style-type: none;
+	height: 44px;
+	padding: 0 10px;
+	line-height: 44px;
+}
+header li span{
+	color: white;
+	font-size: 0.8rem;
+}
+header li .mui-icon{
+	border-right: 1px solid #1d6ca0;
+}
+
+/*尾部*/
+footer{
+	background-color: #003047;
+}
+footer .columns{
+	padding: 1rem;
+	margin-top: 10px;
+}
+footer h3{
+	color: #eef0dc;
+	font-size: 25px;
+}
+footer .column{
+	padding: 0rem 1rem;
+}
+footer .right{
+	color: white;
+	font-size: 1rem;
+}
+footer .column input[type='email']{
+	background: #537788;
+	height: 35px;
+}
+footer .column input[type='button']{
+	background: #eff0d9;
+	color: #4a4a4a;
+	height: 35px;
+	width: 100%;
+	border-radius: 3px;
+}
+footer .column select{
+	height: 2rem;
+	padding: 0 0.5rem;
+	margin: 30px auto;
+}
+footer .column .footer-item{
+	color: #eef0dc;
+	font-size: 1.125rem;
+}
+footer .column .footer-link a{
+	color: #7f939c;
+	font-size: 14px;
+}
+footer .column .footer-wechat{
+	display: flex;
+	justify-content: center;
+}
+footer .column .fwechat{
+	margin: 20px auto 10px;
+	width: 45%;
+}
+footer .column .fwechat p{
+	font-size: 11px;
+	color: #eef0dc;
+	opacity: 0.5;
+	text-align: center;
+}
+footer .column .fwechat img{
+	width: 100%;
+	max-width: 400px;
+}
+footer .contact-info-row{
+	display: table-row;
+}
+footer .contact-info-row>div{
+	padding: 5px 40px 5px 0;
+	display: table-cell;
+	color: #7f939c;
+	font-size: 14px;
+}
+footer .site-footer-bottom{
+	background: #001f2d;
+    padding: 15px 0;
+}
+footer .site-footer-bottom .row{
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 71.25rem;
+    display: flex;
+    justify-content: center;
+}
+footer .site-footer-bottom .row>div{
+	font-size: 14px;
+}
+footer .site-footer-bottom .row-left{
+	color: #eef0dc;
+	width: 60%;
+	padding: 0 0 0 5%;
+}
+footer .site-footer-bottom .row-right{
+	width: 40%;
+	padding: 0 0 0 5%;
+}
+footer .site-footer-bottom .row-right a{
+	color: white;
+}
+.tip{
+	color: orange;
+}
+
+/*modal*/
+.modal-content{
+	background-color: #edefd7;
+}
+.modal-header{
+	border: none;
+}
+.modal-body ul{
+	list-style-type: none;
+}
+.modal-body .atop{
+	border: 1px solid transparent;
+	padding: 10px;
+	background-color: #f7f8e5;
+}
+.modal-body .atop a{
+	color: black;
+}
+.modal-body .amiddle{
+	border: 1px solid transparent;
+	padding: 10px;
+}
+.modal-body .amiddle a{
+	color: orange;
+}
+.modal-body .abottom{
+	border: 1px solid transparent;
+	padding: 5px 10px;
+	background-color: #f7f8e5;
+}
+.modal-body .abottom a{
+	color: orange;
+}
+.modal-body .btop{
+	width: 90%;
+	margin-left: 5%;
+}
+.modal-body .btop input{
+	width: 48%;
+	padding: 10px 0;
+	background-color: #edefd7;
+	font-size: 1rem;
+}
+.modal-body .btop input:first-child{
+	background-color: black;
+	color: white;
+}
+.modal-body .bmiddle p{
+	margin: 10px 0 0 5%;
+}
+.modal-body .bmiddle input{
+	background-color: #f7f8e5;
+	width: 90%;
+	margin-left: 5%;
+}
+.modal-body .bbottom input{
+	background-color: orange;
+	width: 90%;
+	margin: 20px 5%;
+	color: white;
+}
+.modal-body .bmiddle i{
+	color: red;
+	font-size: 14px;
+	margin-left: 6%;
+}
