@@ -1,0 +1,428 @@
+.page-section {
+    padding: 40px 0;
+}
+.hemp-bg {
+    background: url(../img/hemp-bg.png) repeat;
+    background-image: url(../img/hemp-bg.png);
+}
+.text-center {
+    text-align: center !important;
+}
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 71.25rem;
+}
+.heading-wrapper {
+    text-align: center;
+}
+.decor-wrap {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+.decor-wrap:before {
+    content: '';
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid #4a4a4a;
+    bottom: 19px;
+    width: 50%;
+    left: -12px;
+}
+.decor-wrap>h1,
+.decor-wrap h2,
+.decor-wrap h3,
+.decor-wrap .trip-type-title {
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    top: 0px;
+}
+.decor-wrap>h1 {
+    font-size: 2.3125rem;
+}
+.decor-wrap>h1:after,
+.decor-wrap h2:after,
+.decor-wrap h3:after,
+.decor-wrap .trip-type-title:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid #4a4a4a;
+    bottom: -13px;
+    width: 50%;
+    right: -13px;
+}
+.decor-wrap:after {
+    content: '';
+    position: absolute;
+    border-top: 1px solid #4a4a4a;
+    border-right: 1px solid #4a4a4a;
+    bottom: 10px;
+    height: 18px;
+    left: 50%;
+    margin-left: -9px;
+    width: 18px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+p {
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+    color: #444;
+}
+.row:after {
+    clear: both;
+}
+.feature-awards{
+    background: #8e8e80;
+    color: #fff;
+    text-align: center;
+}
+div.light h2:after{
+	border-color: #f0f1d9;
+}
+div.light:after{
+	border-color: #f0f1d9;
+}
+div.light:before{
+	border-color: #f0f1d9;
+}
+.decor-wrap.light>h1,
+.decor-wrap.light h2,
+.decor-wrap.light h3,
+.decor-wrap.light .trip-type-title {
+    color: #f0f1d9;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.35);
+}
+
+h2 {
+    font-size: 2.3125rem;
+}
+#services-thumbs{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#services-thumbs li{
+    width: 23%;
+    margin: 0 5px;
+    position: relative;
+    overflow: hidden;
+}
+#services-thumbs li a{
+    height: 100%;
+    width: 100%;
+}
+#services-thumbs li img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+}
+#services-thumbs li .overlay{
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    top: 100%;
+    margin-top: -50px;
+    transition-duration: 500ms;
+}
+#services-thumbs li .overlay:hover{
+    top: 0;
+    margin-top: 0;
+}
+#services-thumbs li .overlay .title{
+    height:50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 17px;
+}
+#services-thumbs li>a>img:hover+.overlay {
+    top: 0;
+    margin-top: 0;
+}
+#services-thumbs li .overlay .description{
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+}
+.feature-team{
+    background-image: url(../img/home-mountain_bw.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+.travel-experts .mui-col-sm-6{
+    width: 40%;
+    margin:0 5%;
+}
+.travel-expert {
+    background: #f0f1dc;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.travel-expert img{
+    width: 100%;
+}
+.travel-expert .intro-body{
+    padding:20px 10px;
+    overflow: auto;
+}
+.travel-expert .name{
+    font-size: 30px;
+    padding: 5px 0;
+}
+.profession{
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.feature-testimonials{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.feature-testimonials .row{
+    display: flex;
+    justify-content: space-around;
+}
+.feature-testimonials .row .mui-col-sm-4{
+    width:30%;
+}
+.feature-testimonials .row .mui-col-sm-4 .testimonial{
+    text-align: center;
+}
+.feature-testimonials .testimonial .styled-quote{
+    padding: 2.5em 0;
+    margin-bottom: 1.5em;
+}
+blockquote {
+    text-align: center;
+    quotes: "“" "”" ;
+    position: relative;
+}
+.lockquote,
+blockquote p {
+    line-height: 1.6;
+    color: #898989;
+}
+p {
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+}
+blockquote.styled-quote:before {
+    left: 0;
+    top: -0.1em;
+}
+
+blockquote.styled-quote:before,
+blockquote.styled-quote:after {
+    font-size: 6em;
+    line-height: 1;
+}
+blockquote:before {
+    content: open-quote;
+}
+blockquote.styled-quote:after {
+    content: close-quote;
+    right: 0;
+    bottom: -0.3em;
+}
+blockquote:before,
+blockquote:after {
+    color: #ccc;
+    position: absolute;
+}
+.feature-testimonials .read-more-link{
+    background-color: transparent;
+}
+
+.footer-newsletter{
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    overflow: hidden;
+}
+#mc_embed_signup{
+    background-color: #003047;
+    padding-top: 20px;
+}
+#footer-newsletter-iframe {
+    height: 100%;
+    position: relative;
+    top: 50%;
+}
+.site-footer {
+    background: #002d41;
+    color: #eef0dc !important;
+    font-size: 14px;
+}
+.site-footer-top {
+    padding: 10px 0;
+}
+.site-footer .footer-item {
+    color: #eef0dc;
+    font-size: 1.225rem;
+}
+.site-footer-links {
+    margin-bottom: 1.25rem;
+    margin-left: 0;
+    opacity: .5;
+    list-style: none;
+}
+.site-footer-links li {
+    position: relative;
+    padding-left: 20px;
+}
+.site-footer-links li:before {
+    content: '\003e';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 24px;
+    line-height: 1;
+}
+.site-footer-links li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+.site-footer-links li a {
+    font-size: 14px;
+    color: #fff !important;
+}
+.row .row {
+    margin: 0 -.9375rem;
+    max-width: none;
+    width: auto;
+}
+body .footer-wechat .wechat-img-caption, .footer-wechat img {
+    max-width: 180px;
+}
+
+body .footer-wechat .wechat-img-caption {
+    opacity: 0.5;
+    margin-bottom: 5px;
+    font-size: 13px;
+    text-align: center;
+    color: #eef0dc;
+}
+body .footer-wechat img {
+    width: 100%;
+}
+
+body .footer-wechat .wechat-img-caption, .footer-wechat img {
+    max-width: 180px;
+}
+
+.read-more-link{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #4a4a4a;
+    background: #cacbb9;
+}
+.read-more-link:before{
+    content: ">>";
+}
+.column{
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    float: left;
+}
+.contact-info {
+    display: table;
+    margin-bottom: 0;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.vcard, .vcard * {
+    font-size: .875rem;
+    line-height: 1.125rem;
+    letter-spacing: 0;
+    font-style: italic;
+    color: #858585;
+    border: none;
+    padding: 0;
+}
+.contact-info * {
+    color: #eef0dc;
+    font-style: normal;
+}
+
+.contact-info-row {
+    display: table-row;
+}
+.contact-info-row>div {
+    display: table-cell;
+    padding: 5px 0;
+}
+.contact-info .site-footer-adr * {
+    line-height: 26px;
+}
+.site-footer a {
+    color: #fff !important;
+}
+.contactNumber{
+    background-color: #003047;
+}
+.info-mail-icon{
+    background-image: url(../img/icon/mail.png);
+}
+.ui-icon{
+    color: #fff;
+}
+.contact-info-row .icon-mail{
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.contact-info-row .icon-address{
+    background-image: url(../img/icon/address.png);
+    background-repeat: no-repeat;
+    background-position: left top 10px;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+}
+.site-footer-bottom {
+    background: #001f2d;
+    padding: 15px 0;
+    height:139px;
+}
+.site-footer-bottom p{
+    color: #eef0dc;
+}
+.inline-list {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+.inline-list>li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin-left: 1.375rem;
+}

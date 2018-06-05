@@ -31,7 +31,6 @@
 .slider-leftArrow{
     position: absolute;
     width: 200px;
-    height: 100%;
     top: 0;
     left: 0;
     text-align: left;
@@ -40,7 +39,6 @@
 .slider-rightArrow{
     position: absolute;
     width: 200px;
-    height: 100%;
     top: 0;
     right: 0;
     text-align: right;
@@ -135,10 +133,72 @@
     position: absolute;
     top:520px;
     width: 100%;
-    max-width:1000px;
-    margin-left:-500px;
+    max-width:850px;
+    margin-left:-425px;
     left: 50%;
-    padding: 20px;
+    padding: 10px 10px 5px 10px;
     background-color: rgba(0,0,0,.6);
     margin-bottom: 40px;
+}
+.search-above-slider *{
+    font-size: 13px;
+}
+.search-above-slider .mui-col-sm-3{
+    padding: 0 10px;
+}
+.search-above-slider .mui-col-sm-3 .chosen-single{
+    background-color: rgb(240, 241, 219) !important;
+}
+.search-continent{
+    background-color: rgb(215, 216, 196) !important;
+    color: #95958b !important;
+}
+.search-above-btn{
+    width: 100%;
+}
+.rec-above-slider{
+    width: 100%;
+    max-width: 1000px;
+    height: 200px;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    margin-left: -500px;
+    padding: 0 10px 20px;
+    overflow: visible;
+}
+.rec-above-slider .mui-col-sm-3{
+	width: 24%;
+    margin-right: 5px;
+	background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 95%;
+    position: relative;
+}
+.rec-item1{
+    background-image: url(../img/banner-thumbnail/bike.jpg)
+}
+.rec-item2{
+    background-image: url(../img/banner-thumbnail/zebra.jpg)
+}
+.rec-item3{
+    background-image: url(../img/banner-thumbnail/bilu.jpg)
+}
+.rec-item4{
+    background-image: url(../img/banner-thumbnail/Bhutan-tour.jpg)
+}
+.rec-above-slider .title{
+	position: absolute;
+	bottom: 0px;
+	height: 30%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	padding: 5px 20px;
+	font-size: 14px;
 }

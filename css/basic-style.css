@@ -24,10 +24,10 @@ body {
     cursor: auto;
 }
 .f_right{
-    float: right;
+    float: right !important;
 }
 .f_left{
-    float: left;
+    float: left !important;
 }
 .clear{
     clear: both;
@@ -82,15 +82,6 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     line-height: 4px !important;
     height: 35px;
 }
-.btn-orange {
-    color: #fff !important;
-    background-color: #f57d00 !important;
-    border: none !important;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.5) !important;
-    border-radius: 3px !important;
-    line-height: 4px !important;
-    height: 35px;
-}
 .btn-navy{
     color: #fff !important;
     background-color: #007095 !important;
@@ -101,7 +92,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     height: 35px;
 }
 .btn-orange:hover{
-    opacity: .5;
+    background-color: #f79f33 !important;
 }
 .btn-navy:hover{
     opacity: .5;
@@ -135,4 +126,15 @@ form input[type="text"], form input[type="password"], form input[type="date"], f
 }
 .colorRed{
     color: red;
+}
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 71.25rem;
+}
+.block{
+    display: block;
 }

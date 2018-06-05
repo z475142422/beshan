@@ -352,13 +352,15 @@ div.allCover{
 }
 .beshan-commission{
     font-size: 13px;
-    position: absolute;
+    position: fixed;
     width: 60%;
+    height: 90%;
+    overflow: auto;
     max-width: 71.25rem;
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 100px;
+    top: 5%;
     z-index: 1002;
     border-radius: 3px;
     left: 0;

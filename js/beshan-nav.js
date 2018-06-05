@@ -31,12 +31,18 @@ $(function () {
             });
         }
     })
-
     logo.mouseover(function () {
         logo.stop().animate({
                 top:"0px"
         });
     })
+
+    if($(document).scrollTop() > 100){
+        logo.stop().animate({
+                top:"-164px"
+        });
+    }
+
     // 下拉菜单
     $('.alter-subnav').mouseover(function (e) {
         var src = $(e.target || e.srcElement);
@@ -141,15 +147,32 @@ $(function () {
     var activeResult = $('.active-result');
     $('.chosen-results').mouseover(function (e) {
         var src = $(e.target || e.srcElement);
+        if(!src.hasClass('active-result')){
+            return 0;
+        }
         for(var i = 0;i < activeResult.length;i ++)
         {
             activeResult[i].className = "active-result";
-            src.addClass('result-selected');
         }
+        src.addClass('result-selected');
         src.click(function () {
             src.parent().parent().parent().find('span').text(src[0].textContent);
         })
     })
+     $(document).click(function(e) {
+        var src = $(e.target || e.srcElement);
+        console.log(e)
+        if(src.hasClass('DontCloseMe')){
+            return 0;
+        }else{
+            $('.chosen-drop').hide();
+            src.parent().removeClass('chosen-container-active');
+            $('.chosen-single').removeClass('chosen-container-active')
+            $('.chosen-single').find('div').find('b').removeClass('slideArrowUp');
+            chosenClick.removeClass('borderBottomNone');
+            $('.chosen-single').removeClass('borderBottomNone');
+        }
+    });
     // 生成时间
     for(var i = 0;i < 12;i++)
     {
@@ -200,43 +223,80 @@ $(function () {
         $('.allCover').show();
         $('.beshan-commission').fadeIn('slow');
     })
+
 // 轮播图控制 - 左切图
     $('.slider-prev').click(function () {
         var x = parseInt($('.mui-slider-group').css('transform').split(',',6)[4]);
         var y = parseInt($('.mui-slider-group').css('width'));
-        if(x == 0)
-        {
-            x = -4*y;
-            $('.mui-slider-group').css({
-            'transform': 'translateX('+x+'px)'
-            })
-        }else if(x >= -4*y){
-            $('.mui-slider-group').css({
-            'transform': 'translateX('+(x+y)+'px)'
-            })
-            if(x+y == 0)
-            {
+        var z = parseInt(x/y);
+        switch (z) {
+            case -1:
                 $('.mui-slider-group').css({
                 'transform': 'translateX('+(-4*y)+'px)'
                 })
-            }
+                break;
+            case -2:
+                $('.mui-slider-group').css({
+                'transform': 'translateX('+(-1*y)+'px)'
+                })
+                break;
+            case -3:
+                $('.mui-slider-group').css({
+                'transform': 'translateX('+(-2*y)+'px)'
+                })
+                break;
+            case -4:
+                $('.mui-slider-group').css({
+                'transform': 'translateX('+(-3*y)+'px)'
+                })
+                break;
+            default:
+                console.log('wrong')
+                break;
         }
-
     })
 // 轮播图控制 - 右切图
     $('.slider-next').click(function () {
         var x = parseInt($('.mui-slider-group').css('transform').split(',',6)[4]);
         var y = parseInt($('.mui-slider-group').css('width'));
-        if(x >= -4*y){
-            $('.mui-slider-group').css({
-            'transform': 'translateX('+(x-y)+'px)'
-            })
-            if(x-y == -5*y)
-            {
+        var z = parseInt(x/y);
+        switch (z) {
+            case -1:
                 $('.mui-slider-group').css({
-                'transform': 'translateX('+(-y)+'px)'
+                'transform': 'translateX('+(-2*y)+'px)'
                 })
-            }
+                break;
+            case -2:
+                $('.mui-slider-group').css({
+                'transform': 'translateX('+(-3*y)+'px)'
+                })
+                break;
+            case -3:
+                $('.mui-slider-group').css({
+                'transform': 'translateX('+(-4*y)+'px)'
+                })
+                break;
+            case -4:
+                $('.mui-slider-group').css({
+                'transform': 'translateX('+(-1*y)+'px)'
+                })
+                break;
+            default:
+                console.log('wrong')
+                break;
+        }
+    })
+// 相对滚动
+    $(document).scroll(function (e) {
+        var src = $(e.target || e.srcElement);
+        var scrollTop = src.scrollTop();
+        var x = 950;
+        var y = 0;
+        if(scrollTop > 950){
+            y = scrollTop - x;
+            $('.feature-team').css({
+                'background-position' : '0% '+(y/3-340)+'px',
+            })
         }
     })
 })
