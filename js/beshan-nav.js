@@ -161,7 +161,7 @@ $(function () {
     })
      $(document).click(function(e) {
         var src = $(e.target || e.srcElement);
-        console.log(e)
+
         if(src.hasClass('DontCloseMe')){
             return 0;
         }else{
@@ -251,7 +251,7 @@ $(function () {
                 })
                 break;
             default:
-                console.log('wrong')
+
                 break;
         }
     })
@@ -282,7 +282,7 @@ $(function () {
                 })
                 break;
             default:
-                console.log('wrong')
+
                 break;
         }
     })
@@ -299,4 +299,12 @@ $(function () {
             })
         }
     })
+// search
+    var storage = window.localStorage;
+    $('.search-btn').click(function () {
+        storage.setItem('beshanSearch', $('.search-content').val());
+        console.log(storage.getItem('beshanSearch'))
+    })
+// 获取无结果显示
+    $('.search-show').text('搜索无结果 "'+storage.beshanSearch+'", 但并不意味着我们没有！"')
 })

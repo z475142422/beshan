@@ -1,0 +1,9 @@
+section.beshan-team{
+    padding-top: 200px;
+    background-image: url(../img/people-listing-bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: 100% center;
+    background-position: center center;
+    background-attachment: fixed;
+}
