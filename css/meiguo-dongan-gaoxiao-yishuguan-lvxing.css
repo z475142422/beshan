@@ -79,6 +79,9 @@ section .carousel-content{
 	padding: 4px;
 	width: 20px;
 }
+.about{
+	display: none;
+}
 .carousel-content .about-box{
 	background-color: rgba(225,225,225,0.95);
 	padding: 20px;
@@ -100,6 +103,430 @@ section .carousel-content{
 }
 .section{
 	width: 100%;
-	height: 600px;
+	padding: 20px 0;
 	background: url(../img/hemp-bg.png);
+}
+.section .container{
+	margin: 0;
+	width: 100%;
+}
+.section .row{
+	width: 100%;
+	margin: 0;
+	padding: 20px 0 0;
+}
+.section .border{
+	width: 100%;
+}
+.section .trip-numbers-info{
+	border: 1px solid black;
+	padding-top: 6px 0;
+}
+.section .trip-length{
+	height: 100%;
+    text-align: center;
+    line-height: 1.4;
+    padding: 7px 0;
+}
+.section .trip-length span{
+	font-size: 1.3rem;
+}
+.section .trip-length span:first-child{
+	display: block;
+}
+.section .trip-length .value{
+	font-size: 3rem;
+}
+.section .small{
+	border-right: 1px solid black;
+	float: left;
+}
+.section .middle{
+	float: right;
+}
+.section .large{
+	border-right: 1px solid black;
+	float: left;
+}
+.section .transport .transport-icon{
+    background: #c6c7b0;
+    color: #6f6f68;
+    width: 35px;
+    height: 35px;
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.section .transport span{
+	display: block;
+	font-size: 1.3rem;
+}
+.section .price-display>span{
+	display: block;
+}
+.section .price-display span{
+	font-size: 1.3rem;
+}
+.section .price-display .value{
+	font-size: 3rem;
+}
+.section .transport,
+.section .price-display{
+	height: 100%;
+    line-height: 1.4;
+    padding: 7px 0;
+}
+.section .season-info{
+	height: 65px;
+} 
+.section .season-display{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #4a4a4a;
+    width: 65px;
+    float: left;
+    color: #fff;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    opacity: 0.15;
+    display: table;
+}
+.section .season-display>div{
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+.section .season-display>div span{
+	display: block;
+	line-height: 1.1;
+	font-size: 1.4rem;
+}
+.section .season-display>div span:first-child{
+	font-size: 3rem;
+}
+.section .tags{
+    margin: 0 0 20px 0;
+    font-size: 1.6rem;
+}
+.section .tags i{
+	margin-right: 8px;
+}
+.section .trip-misc-details{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.section h3{
+	margin: 0;
+	line-height: 1.6;
+	font-size: 2.8rem;
+	font-weight: normal;
+}
+.section ul{
+	margin-left: 15px;
+	line-height: 1.6;
+	font-size: 1.7rem;
+	margin-bottom: 20px;
+}
+.section .basis{
+	width: 100%;
+	margin: 0;
+	padding:0;
+}
+#basic-itin{
+    width: 100%;
+}
+.marker{
+    fill: #9b9b9a;
+}
+.stop-dot{
+    fill: #9b9b9b;
+}
+.days-label{
+    font-size: 18px;
+}
+.city-label{
+    font-size: 22px;
+    fill: #8c8d85;
+}
+.end-label {
+    font-size: 14px;
+}
+
+.section .decor-wrap{
+    text-align: center;
+}
+.section .decor-wrap h1{
+	font-size: 3.5rem;
+	font-weight: normal;
+}
+.section .decor-wrap canvas{
+	height: 30px;
+	width: 90px;
+}
+.section .row-top{
+	position: relative;
+}
+.section img{
+	width: 100%;
+}
+.section .header{
+	width: 100%;
+	color: white;
+	font-size: 14px;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.6);
+	padding: 10px;
+}
+.section .header:hover{
+	color: orange;
+}
+.section .header a{
+	color: white;
+	font-size: 21px;
+}
+.section .header a:hover{
+	color: orange;
+}
+.modal-content{
+	background-color: #4a4a4a;
+}
+.modal-body{
+	text-align: center;
+}
+.close span{
+	color: #ccc;
+}
+.modal-header{
+	border: none;
+}
+.modal-body img{
+	width: 60%;
+	margin: 20% auto;
+}
+
+.route{
+	background: url(../img/trip-detailed_itinerary-bg.jpg);
+	padding: 40px 10px;
+}
+.route .row{
+	background: url(../img/hemp-bg.png);
+}
+.route .decor-wrap{
+    text-align: center;
+}
+.route .decor-wrap h1{
+	font-size: 3.5rem;
+	font-weight: normal;
+}
+.route .decor-wrap canvas{
+	height: 30px;
+	width: 90px;
+}
+.route .container{
+	margin: 0;
+	width: 100%;
+	opacity: 0.9;
+}
+.route .row{
+	width: 100%;
+	margin: 0;
+	padding: 20px 10px 0;
+}
+.route .itinerary-item .date{
+    width: 40px;
+    text-align: center;
+    color: #f0f1d9;
+    float: left;
+    background: #777777;
+}
+.itinerary-item .date span{
+    display: block;
+}
+.itinerary-item .date .field{
+    background: #3c3c3c;
+    padding: 5px 0;
+    font-size: 1.5rem;
+}
+.itinerary-item .date .value{
+    font-size: 2rem;
+    padding: 9px 0;
+}
+.itinerary-item .date .field{
+    background: #3c3c3c;
+    padding: 5px 0;
+    font-size: 1.5rem;
+}
+.itinerary-item .content{
+    margin-left: 60px;
+}
+.itinerary-item .stop-name{
+    font-size: 1.8rem;
+    margin-top: 0;
+    font-weight: normal;
+}
+.itinerary-item p{
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+.cols .col-lg-4{
+	padding: 10px 15px;
+}
+.route .custom-button{
+    padding: 0.7rem 2.6rem;
+    display: inline-block;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 1rem;
+    background-color: #f17e00;
+    color: white;
+    font-size: 2rem;
+}
+.route .order{
+	text-align: center;
+	padding: 40px;
+}
+.section .h-box-1{
+    background: #d8d9c2;
+    width: 100%;
+}
+.h-box-1 img{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.h-box-1 .body{
+	width: 40%;
+    margin: 20px 0 40px 20px;
+    display: inline-block;
+}
+.h-box-1 .body .title{
+    font-size: 2rem;
+    line-height: 1.6;
+}
+.h-box-1 .body .category{
+    margin: 0 0 10px 0;
+    font-size: 1.6rem;
+}
+.h-box-1 .body p{
+    line-height: 1.5;
+    font-weight: normal;
+    font-size: 1.6rem;
+    margin-bottom: 1.25rem;
+}
+.hotel .col-lg-6{
+	margin: 10px 0;
+}
+.price{
+	background: url(../img/trip-additional_info-bg.jpg);
+	padding: 40px 10px;
+}
+.price .row{
+	background: url(../img/hemp-bg.png);
+}
+.price .decor-wrap{
+    text-align: center;
+}
+.price .decor-wrap h1{
+	font-size: 3.5rem;
+	font-weight: normal;
+}
+.price .decor-wrap canvas{
+	height: 30px;
+	width: 90px;
+}
+.price .container{
+	margin: 0;
+	width: 100%;
+	opacity: 0.9;
+}
+.price .row{
+	width: 100%;
+	margin: 0;
+	padding: 20px 10px 0;
+}
+.price p{
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+.price ul{
+    margin-left: 1.1rem;
+}
+.price ul{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+.price strong,
+.price b{
+    font-weight: bold;
+}
+.price .custom-button{
+    padding: 0.7rem 2.6rem;
+    display: inline-block;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 1rem;
+    background-color: #f17e00;
+    color: white;
+    font-size: 2rem;
+}
+.price .order{
+	text-align: center;
+	padding: 40px;
+}
+
+.same{
+	width: 100%;
+	padding: 20px 0 40px 0;
+	background: #8e8e80;
+}
+.same .container{
+	margin: 0;
+	width: 100%;
+}
+.same .row{
+	width: 100%;
+	margin: 0;
+	padding: 20px 0 0;
+}
+.same .decor-wrap{
+    text-align: center;
+}
+.same .decor-wrap h1{
+	color: #f0f1d9;
+	font-size: 3.5rem;
+	font-weight: normal;
+}
+.same .decor-wrap canvas{
+	height: 30px;
+	width: 90px;
+}
+.same img{
+	width: 100%;
+}
+.same .header{
+	width: 100%;
+	height: 80px;
+	color: white;
+	font-size: 14px;
+	background-color: #f0f1d9;
+	padding: 10px;
+}
+.same .header:hover{
+	color: orange;
+}
+.same .header a{
+	color: black;
+	font-size: 21px;
+}
+.same .header a:hover{
+	color: orange;
 }
