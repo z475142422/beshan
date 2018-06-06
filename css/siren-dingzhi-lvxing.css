@@ -23,8 +23,11 @@ a:hover{
 }
 section{
 	margin-top: 80px;
-	width: 80%;
-	margin-left: 10%;
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    max-width: 85rem;
 }
 section .heading-wrapper{
 	width: 100%;
@@ -120,6 +123,11 @@ section .select-search .menu1 li:nth-child(32){
 }
 .container{
 	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 95rem;
 }
 .container .row-top{
 	position: relative;
@@ -263,4 +271,36 @@ section .select-search .menu1 li:nth-child(32){
 }
 .col-lg-4.col-md-4.col-sm-6.col-xs-12{
 	padding-bottom: 20px;
+}
+.bottom-row{
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 95rem;
+}
+.bottom-row nav{
+	float: right;
+	margin-right: 15px;
+}
+.bottom-row .pagination{
+	margin: 0;
+}
+.bottom-row li a{
+	color: white;
+	background-color: #003751;
+	border: none;
+}
+.bottom-row li a:hover{
+	color: orange;
+	background-color: #003751;
+}
+.bottom-row .previous:hover,
+.bottom-row .next:hover{
+	color: white;
+	background-color: #003751;
+}
+.bottom-row .first{
+	color: orange;
 }
