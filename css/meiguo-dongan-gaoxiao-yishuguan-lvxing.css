@@ -10,7 +10,6 @@ body{
 input,select,option{
 	border: none;
 	outline: none;
-	-webkit-appearance: none;
 }
 a:hover{
 	text-decoration: none;
@@ -291,19 +290,19 @@ section .carousel-content{
 .section .header a:hover{
 	color: orange;
 }
-.modal-content{
+#myModal .modal-content{
 	background-color: #4a4a4a;
 }
-.modal-body{
+#myModal .modal-body{
 	text-align: center;
 }
-.close span{
+#myModal .close span{
 	color: #ccc;
 }
-.modal-header{
+#myModal .modal-header{
 	border: none;
 }
-.modal-body img{
+#myModal .modal-body img{
 	width: 60%;
 	margin: 20% auto;
 }
@@ -521,12 +520,102 @@ section .carousel-content{
 	padding: 10px;
 }
 .same .header:hover{
-	color: orange;
+	background-color: #4a4a4a;
 }
 .same .header a{
 	color: black;
 	font-size: 21px;
 }
 .same .header a:hover{
-	color: orange;
+	color: white;
+}
+
+#myModal1 .modal-content{
+	background-color: #edefd7;
+}
+#myModal1 .modal-body{
+	text-align: center;
+}
+#myModal1 .modal-header{
+	border: none;
+}
+#myModal1 .modal-body .container{
+	width: 70%;
+	margin-left: 15%;
+	text-align: left;
+}
+#myModal1 .modal-body .container label{
+	font-size: 1.4rem;
+}
+#myModal1 .modal-body .container input{
+	background: #feffef;
+}
+.check{
+	background-color: white;
+}
+#myModal1 .modal-body h2{
+	font-size: 2.6rem;
+	font-weight: normal;
+}
+#myModal1 .modal-body p{
+	font-size: 1.7rem;
+}
+#myModal1 .modal-body .form-control{
+	width: 80%;
+}
+#myModal1 .modal-body .form-group{
+	margin-bottom: 20px;
+}
+#myModal1 .modal-body .dropdown button{
+	width: 80%;
+	background: #cdcfb7;
+	position: relative;
+	text-align: left;
+}
+#myModal1 .modal-body button span{
+	position: absolute;
+	top: 35%;
+	right: 5px;
+}
+#myModal1 .dropdown-menu{
+	overflow: auto;
+	height: 200px;
+	min-width: 80%;
+	z-index: 12;
+}
+#myModal1 .dropdown-menu a:hover{
+	background-color: #b9baaa;
+}
+#myModal1 .dropdown-menu li:nth-child(odd){
+	background-color: #f7f8e1;
+}
+#myModal1 .dropdown-menu li:nth-child(even){
+	background-color: #feffe9;
+}
+#myModal1 .menu1 li:nth-child(2),
+#myModal1 .menu1 li:nth-child(5),
+#myModal1 .menu1 li:nth-child(7),
+#myModal1 .menu1 li:nth-child(13),
+#myModal1 .menu1 li:nth-child(19),
+#myModal1 .menu1 li:nth-child(21),
+#myModal1 .menu1 li:nth-child(32){
+	font-size: 14px;
+	background-color: #d7d8c4;
+	color: #95958b;
+}
+#myModal1 .custom-button{
+    padding: 0.5rem 2.4rem;
+    display: inline-block;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 1rem;
+    background-color: #f17e00;
+    color: white;
+    font-size: 1.7rem;
+}
+#myModal1 .cancel{
+	color: black;
+	font-size: 1.4rem;
+	text-decoration: underline;
+	margin-left: 10px;
 }

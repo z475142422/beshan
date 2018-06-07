@@ -18,6 +18,26 @@ $(function(){
         $('.transport').css('border','none')
       }
   	}
+
+// 下拉搜索
+  var span;
+  $('.select-search .btn').click(function(){
+    $(this).css('background-color','#f0f1d9');
+    $(this).find('span').toggleClass('glyphicon glyphicon-menu-up');
+    $(this).find('span').toggleClass('glyphicon glyphicon-menu-down');
+  })
+  $('.menu1 li:not(.dark)').click(function(){
+    $('.location').text($(this).text());
+    span = $('<span class="glyphicon glyphicon-menu-down\
+            "></span>');
+    $('.location').append(span);
+  })
+  $('.menu2 li').click(function(){
+    $('.hobby').text($(this).text());
+    span = $('<span class="glyphicon glyphicon-menu-down\
+            "></span>');
+    $('.hobby').append(span);
+  })
 })
 
 window.onload = function(){

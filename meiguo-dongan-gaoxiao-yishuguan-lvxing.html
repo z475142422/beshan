@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>高等学府与艺术馆-美国旅游-碧山旅行</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<script type="text/javascript" src="jquery-3.3.1.js"></script>
@@ -25,7 +25,7 @@
 							</p>
 						</div>
 						<div class="actions">
-							<a href="" class="custom-button">定制</a>
+							<a data-toggle="modal" href="#myModal1" class="custom-button">定制</a>
 							<div class="dropdown custom-button1">
 			                	<button class="btn btn-default dropdown-toggle social-sharer" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-share"></span>分享</button>
 			               		<ul class="dropdown-menu share-icon" aria-labelledby="dropdownMenu2">
@@ -192,7 +192,7 @@
 			</div>
 		</div>
 	</div>
-<!-- Modal -->
+<!-- Modal 图片 -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -388,7 +388,7 @@
 			</div>
 			<div class="row order">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		 			<a href="" class="custom-button">定制</a>
+		 			<a data-toggle="modal" href="#myModal1" class="custom-button">定制</a>
 				</div>
 			</div>
 		</div>
@@ -457,7 +457,7 @@
 			</div>
 			<div class="row order">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		 			<a href="" class="custom-button">定制</a>
+		 			<a data-toggle="modal" href="#myModal1" class="custom-button">定制</a>
 				</div>
 			</div>
 		</div>
@@ -477,7 +477,7 @@
 					<div class="row-top">
 						<img src="https://www.beshan.com/images/trip_thumbnail/webwxgetmsgimg16.jpg" alt="">
 						<div class="header">
-							<div><a href="">碧山居·缅因 WildChina Residence - Maine</a></div>
+							<div><a href="#">碧山居·缅因 WildChina Residence - Maine</a></div>
 						</div>
 					</div>
 				</div>
@@ -487,7 +487,7 @@
 					<div class="row-top">
 						<img src="https://www.beshan.com/images/trip_thumbnail/washington-dc-22.jpg" alt="">
 						<div class="header">
-							<div><a href=""> 美国精神 – 美国东岸城市与自然深度探险</a></div>
+							<div><a href="#"> 美国精神 – 美国东岸城市与自然深度探险</a></div>
 						</div>
 					</div>
 				</div>
@@ -497,12 +497,101 @@
 					<div class="row-top">
 						<img src="https://www.beshan.com/images/trip_thumbnail/photo-1423347673683-ccdb7f6a948f.jpg" alt="">
 						<div class="header">
-							<div><a href="">感受阳光西海岸–美国加州经典之旅</a></div>
+							<div><a href="#">感受阳光西海岸–美国加州经典之旅</a></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+ <!-- Modal 表单 -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  	<div class="modal-dialog modal-lg" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      		</div>
+      	<div class="modal-body">
+       	<h2>开始预订  - 美国东岸高等学府及艺术馆深度探访之旅</h2>
+       	<p>恭喜您向梦想旅行又迈进了一步！请填写以下表格，我们的旅行定制师将助您实现梦想。</p>
+       	<div class="container">
+       		<form class="form-horizontal">
+       			<div class="form-group">
+       				<label for="inputname" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">名：</label>
+    				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+      					<input type="name" class="form-control" id="inputname">
+    				</div>
+       			</div>
+       			<div class="form-group">
+       				<label for="inputname1" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">姓：</label>
+    				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+      					<input type="name1" class="form-control" id="inputname1">
+    				</div>
+       			</div>
+       			<div class="form-group">
+       				<label for="inputtel" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">电话：</label>
+    				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+      					<input type="tel" class="form-control" id="inputtel">
+    				</div>
+       			</div>
+       			<div class="form-group">
+       				<label for="inputemail" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">邮箱：</label>
+    				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+      					<input type="email" class="form-control" id="inputemail">
+    				</div>
+       			</div>
+       			<div class="form-group">
+       				<label for="inputwe" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">微信号：<br>选填</label>
+    				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+      					<input type="text" class="form-control" id="inputwe">
+    				</div>
+       			</div>
+       			<div class="form-group">
+       				<label class="col-lg-2 col-md-2 col-sm-12 col-xs-12">您如何得知碧山</label>
+    				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+      					<div class="dropdown">
+		  					<button class="btn btn-default dropdown-toggle hobby" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		    				---
+		   						<span class="glyphicon glyphicon-menu-down
+								"></span>
+		  					</button>
+		  					<ul class="dropdown-menu menu2" aria-labelledby="dropdownMenu1">
+		  						<li><a href="#">---</a></li>
+								<li><a href="#">曾跟碧山旅行过</a></li>
+		    					<li><a href="#">微信</a></li>
+		   						<li><a href="#">朋友推荐</a></li>
+		    					<li><a href="#">线下活动</a></li>
+		   						<li><a href="#">碧山电子报《碧山刊》</a></li>
+		    					<li><a href="#">网络平台</a></li>
+		    					<li><a href="#">搜索引擎</a></li>
+			   					<li><a href="#">媒体报道</a></li>
+			   					<li><a href="#">其他</a></li>
+			  				</ul>
+						</div>
+    				</div>
+       			</div>
+       			<div class="form-group">
+       				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+       					
+    				</div>
+    				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+      					<label for="wantMail">&nbsp;<input type="checkbox" name="wantMail" class="check" id="wantMail">我想要收到碧山的电子报</label>
+    				</div>
+       			</div>
+       			<div class="form-group">
+       				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+       					
+    				</div>
+    				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+      					<button class="custom-button">提交</button>
+      					<a href="" class="cancel">取消</a>
+    				</div>
+       			</div>
+      		</form>
+   		</div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
