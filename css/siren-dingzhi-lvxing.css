@@ -52,17 +52,26 @@ section .heading-wrapper p{
 	text-align: center;
 	margin-bottom: 20px;
 }
+section .container-fluid{
+	margin: 15px 0 30px 0;
+}
+section .container-fluid .col-lg-4{
+	padding: 0;
+}
+section .container-fluid .row{
+	width: 90%;
+	margin-left: 5%;
+}
 section .select-search{
 	height: 70px;
 	width: 100%;
 	background-color: rgba(0,0,0,0.6);
 	border-radius: 3px;
 	color: rgba(0,0,0,0.6);
-	margin: 15px 0 30px 0;
 	text-align: center;
 }
 section .select-search .dropdown{
-	width: 30%;
+	width: 100%;
 	height: auto;
     display: inline-block;
 }
@@ -80,7 +89,7 @@ section .select-search span{
 	right: 5px;
 }
 section .select-search .search{
-	width: 30%;
+	width: 100%;
 	height: auto;
     display: inline-block;
 }
